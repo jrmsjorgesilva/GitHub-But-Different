@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const WrapperInfoUser = styled.div`
@@ -27,6 +33,9 @@ export const WrapperInfoUser = styled.div`
     font-size: 16px;
     font-weight: bold;
   }
+  @media screen and(max-width: 480px) {
+    align-items: center;
+  }
 `;
 
 export const WrapperStatusCount = styled.div`
@@ -39,7 +48,7 @@ export const WrapperStatusCount = styled.div`
 `;
 
 export const WrapperUserGeneric = styled.div`
-  display: flex;
+  display: block;
   align-items: center;
   margin-top: 8px;
 
@@ -52,10 +61,21 @@ export const WrapperUserGeneric = styled.div`
     color: blue;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 100% !important;
+    text-align: center;
+  }
 `;
 
 export const WrapperImage = styled.img`
   border-radius: 50%;
   width: 200px;
   margin: 8px;
+
+  @media screen and (max-width: 480px) {
+    display: block !important;
+    width: 100%;
+    align-items: center;
+  }
 `;

@@ -15,6 +15,12 @@ export const Wrapper = styled.div`
     font-weight: 500;
   }
 
+  @media screen and (max-width: 480px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
   button {
     background-color: #225ed8;
     padding: 8px 16px;
@@ -29,6 +35,15 @@ export const Wrapper = styled.div`
     span {
       font-weight: bold;
       color: #ffff;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    button {
+      display: block;
+      width: 100%;
+      margin: 10px 0px;
+      text-align: center;
     }
   }
 `;
